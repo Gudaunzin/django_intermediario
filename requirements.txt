@@ -1,0 +1,11 @@
+Django==5.1.1
+django-bootstrap4==24.4
+django-stdimage==6.0.2
+gunicorn==23.0.0
+PyMySQL==1.1.1
+whitenoise==6.7.0
+sqlparse==0.5.1
+mysql==0.0.3
+mysqlclient==2.2.4
+dj-database-url==2.2.0
+psycopg2-binary==2.9.9

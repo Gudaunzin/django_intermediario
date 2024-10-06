@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load bootstrap4 %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    {% bootstrap_css %}
+</head>
+<body>
+    <h1>contato</h1>
+    {% bootstrap_messages %}
+
+    <form action="{% url 'contato' %}" method="post" class="form" autocomplete="off">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+            <button type="submit" class="bnt bnt-primary">Enviar</button>
+        {% endbuttons %}
+
+    </form>
+
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>
