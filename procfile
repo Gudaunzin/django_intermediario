@@ -1,1 +1,1 @@
-web: gunicorn django_intermediario.wsgi --log-file - 
+gunicorn django2.wsgi --log-file - 
